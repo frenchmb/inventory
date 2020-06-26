@@ -14,7 +14,7 @@ mvnw.cmd clean install
 ```
 
 ## Run Inventory Service
-The inventory service can be run using either or the following commands:
+The inventory service can be run using either of the following commands:
 
 ```
 java -jar target\inventory-1.0-SNAPSHOT.jar
