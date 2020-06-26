@@ -26,4 +26,4 @@ OR
 mvnw spring-boot:run
 ```
 
-The service will not start and listen on localhost port 8080.
+The service will now start and listen on localhost port 8080.
