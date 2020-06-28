@@ -17,7 +17,6 @@ import org.springframework.test.web.servlet.MvcResult;
 
 import javax.annotation.Resource;
 import java.time.OffsetDateTime;
-import java.util.Arrays;
 import java.util.UUID;
 
 import static org.junit.Assert.assertEquals;
@@ -82,7 +81,7 @@ public class InventoryControllerTest {
     public void shouldNotFindInventoryItem() throws Exception {
         UUID inventoryId = UUID.randomUUID();
         MvcResult result = mockMvc.perform(get("/inventory/" + inventoryId.toString()))
-                .andDo(print()).andExpect(status().is(404)).andReturn();
+                .andDo(print()).andExpect(status().isNotFound()).andReturn();
         assertEquals(0, result.getResponse().getContentLength());
     }
 
