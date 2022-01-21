@@ -25,7 +25,7 @@
 		<junit-version>4.12</junit-version>
 		<migbase64-version>2.2</migbase64-version>
 		<jackson-databind-nullable>0.2.1</jackson-databind-nullable>
-		<com.h2database.h2.version>1.4.200</com.h2database.h2.version>
+		<com.h2database.h2.version>2.1.210</com.h2database.h2.version>
 	</properties>
 
 	<dependencies>
